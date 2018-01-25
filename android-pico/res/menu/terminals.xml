@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="uk.ac.cam.cl.pico.android.TerminalsActivity" >
+    
+    <item
+        android:id="@+id/action_new_terminal"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_new_terminal"
+        android:icon="@android:drawable/ic_menu_add" />
+
+</menu>

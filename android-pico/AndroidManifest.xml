@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uk.ac.cam.cl.pico.android"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- ACCESS_NETWORK_STATE permission needed to determine whether the phone is connected to a data network -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".core.PicoApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher_pico"
+        android:label="@string/app_name"
+        android:theme="@style/PicoTheme"
+        tools:replace="android:icon" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.apps.APP_ID"
+            android:value="id=handy-cache-620" />
+
+        <service
+            android:name=".core.PicoServiceImpl"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".pairing.LensPairingIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".pairing.KeyPairingIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".pairing.PairingsIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".pairing.AuthenticateIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".terminal.TerminalsIntentService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".core.SplashScreenActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".core.PicoStatusActivity"
+            android:label="@string/title_activity_pico_status" >
+
+            <!-- android:uiOptions="splitActionBarWhenNarrow" -->
+            <intent-filter>
+                <action android:name="none" />
+
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".core.AcquireCodeActivity"
+            android:label="@string/pico"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".core.PicoCaptureActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_pico_capture"
+            android:screenOrientation="portrait"
+            android:theme="@style/PicoCaptureActivityTheme" >
+
+            <!--
+            	screenOrientation and configChanges attributes make it so the view is fixed in a
+            	portrait orientation and doesn't get redrawn (slow) when the user rotates their
+            	device.
+            -->
+        </activity>
+        <activity
+            android:name=".pairing.NewKeyPairingActivity"
+            android:label="@string/title_activity_new_pairing" >
+        </activity>
+        <activity
+            android:name=".pairing.NewLensPairingActivity"
+            android:label="@string/title_activity_new_pairing" >
+        </activity>
+        <activity
+            android:name=".pairing.ChooseKeyPairingActivity"
+            android:label="@string/title_activity_choose_pairing" >
+        </activity>
+        <activity
+            android:name=".pairing.AuthenticateActivity"
+            android:label="@string/title_activity_authenticate" >
+        </activity>
+        <activity
+            android:name=".pairing.LensPairingDetailActivity"
+            android:label="@string/title_activity_lens_pairing_detail" >
+        </activity>
+        <activity
+            android:name=".setup.SetupActivity"
+            android:label="@string/activity_setup__title"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".setup.RestoreBackupActivity"
+            android:label="@string/activity_setup__title"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+
+        <!--
+        These are now registered dynamically in uk.ac.cam.cl.pico.android.core.PicoCaptureActivity.java
+        See http://www.vogella.com/tutorials/AndroidBroadcastReceiver/article.html
+        <receiver android:name="uk.ac.cam.cl.pico.android.util.ConnectivityReceiver"
+            android:label="ConnectivityReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- Third party components -->
+
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-9x2lzwdvq3gf9db" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.microsoft.live.sample.skydrive.SkyDriveActivity" >
+        </activity>
+        <activity
+            android:name="uk.ac.cam.cl.pico.android.delegate.DelegateActivity"
+            android:label="@string/title_activity_delegate" >
+        </activity>
+        <activity android:name="uk.ac.cam.cl.pico.android.delegate.RulesActivity" android:label='@string/title_activity_delegate_rules'></activity>
+        <activity android:name="uk.ac.cam.cl.pico.android.delegate.NewDelegatePairingActivity" android:label="@string/title_activity_delegate"></activity>
+        <service android:name=".delegate.DelegatePairingIntentService" android:exported="false"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WizardPageContainer">
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:layout_width="wrap_content" />
+    
+    <LinearLayout
+  	    android:orientation="vertical"
+  	    android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+  		android:paddingRight="@dimen/activity_horizontal_margin"
+ 	 	android:paddingTop="@dimen/activity_vertical_margin"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content">    	
+	    
+	    <MultiAutoCompleteTextView
+	        android:id="@+id/fragment_pgp_word_list_typing__key_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="@dimen/inner_vertical_margin"
+	        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_margin"
+	        android:layout_weight="0"
+	        android:ems="10"
+	        android:hint="@string/fragment_pgp_word_list_typing__field"
+	        android:inputType="textMultiLine|textVisiblePassword"
+	        android:maxLines="7">
+	        <requestFocus />
+	    </MultiAutoCompleteTextView>
+	    
+	    <include
+	        layout="@layout/pgp_wordlist"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jpico">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-pico/libs/jpico.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

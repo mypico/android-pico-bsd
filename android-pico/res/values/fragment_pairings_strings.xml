@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <string name="no_pairings">No pairings</string>       	    
+
+     <plurals name="pairings_deleted">
+        <item quantity="one">Pairing removed</item>
+        <item quantity="other">%d pairings removed</item>
+    </plurals>
+    <plurals name="pairings_not_deleted">
+        <item quantity="one">Pairing could not be removed</item>
+        <item quantity="other">%d pairings could not be removed</item>
+    </plurals>
+    <string name="some_pairings_deleted">Some pairings could not be removed</string>
+    
+    <string name="failure_deleting_pairing">Failed deleting pairing</string>
+                            
+    <!-- Delete pairing dialog -->
+    <string name="delete_pairing_dialog__title_1">Remove pairing?</string>
+    <string name="delete_pairing_dialog__title_multi">Remove pairings?</string>
+    <string name="delete_pairing_dialog__message_1">Are you sure you want to remove the pairing \'%s\'?</string>
+    <string name="delete_pairing_dialog__message_multi">Are you sure you want to remove these %d pairings?</string>
+    <string name="delete_pairing_dialog__positive">@string/yes</string>
+    <string name="delete_pairing_dialog__negative">@string/no</string>   
+   
+    <!--  Progress dialog -->
+    <string name="delete_pairing__progress">Removing pairing&#8230;</string>
+    
+</resources>

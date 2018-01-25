@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jrendezvous">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-pico/libs/jrendezvous.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

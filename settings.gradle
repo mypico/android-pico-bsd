@@ -1,0 +1,7 @@
+include ':libproj:live-sdk-sample'
+include ':android-pico'
+include ':libproj:android-wizardpager'
+include ':libproj:dropbox-android-chooser'
+include ':libproj:capture-activity'
+include ':libproj:google-play-services'
+include ':libproj:live-sdk'

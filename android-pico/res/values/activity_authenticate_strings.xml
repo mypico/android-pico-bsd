@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="title_activity_authenticate">@string/pico</string>
+    <string name="auth_failed">Login failed</string>
+    <string name="authenticating_to_fmt">Logging in to %s</string>
+    <string name="auth_successful_fmt">Login to %s was successful</string>
+    <string name="auth_failed_fmt">Login to %s failed</string>       
+    <string name="service_unknown">Service unknown</string>    
+       
+</resources>

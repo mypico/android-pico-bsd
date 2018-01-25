@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android-pico" />
+            <option value="$PROJECT_DIR$/libproj" />
+            <option value="$PROJECT_DIR$/libproj/android-wizardpager" />
+            <option value="$PROJECT_DIR$/libproj/capture-activity" />
+            <option value="$PROJECT_DIR$/libproj/dropbox-android-chooser" />
+            <option value="$PROJECT_DIR$/libproj/google-play-services" />
+            <option value="$PROJECT_DIR$/libproj/live-sdk" />
+            <option value="$PROJECT_DIR$/libproj/live-sdk-sample" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android-pico" />
+            <option value="$PROJECT_DIR$/libproj" />
+            <option value="$PROJECT_DIR$/libproj/android-wizardpager" />
+            <option value="$PROJECT_DIR$/libproj/capture-activity" />
+            <option value="$PROJECT_DIR$/libproj/dropbox-android-chooser" />
+            <option value="$PROJECT_DIR$/libproj/google-play-services" />
+            <option value="$PROJECT_DIR$/libproj/live-sdk" />
+            <option value="$PROJECT_DIR$/libproj/live-sdk-sample" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

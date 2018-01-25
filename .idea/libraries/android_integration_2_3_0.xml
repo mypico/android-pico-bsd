@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-integration-2.3.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-pico/libs/android-integration-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

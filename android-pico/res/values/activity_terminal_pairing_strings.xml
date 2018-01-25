@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="dialog_terminal_pairing__title">Add trusted computer?</string>
+    <string name="dialog_terminal_pairing__message">Do you want your Pico to trust the computer %s?</string>
+    <string name="dialog_terminal_pairing__positive">@string/yes</string>
+    <string name="dialog_terminal_pairing__negative">@string/no</string>
+    <string name="no_terminals">On your computer, click the Pico icon in your browser and \'Pair computer with Pico\'.\n\nThen click the \'+\' button here to scan the barcode.\n</string>
+    <string name="action_new_terminal">Add computer</string>
+    <string name="terminal_added">New trusted computer saved.</string>
+    <string name="terminal_not_added">Unable to save new trusted computer.</string>
+    <string name="action_delete_terminal">Remove computer</string>
+    <plurals name="terminals_deleted">
+        <item quantity="one">Computer removed</item>
+        <item quantity="other">%d computers removed</item>
+    </plurals>
+    <plurals name="terminals_not_deleted">
+        <item quantity="one">Computer could not be removed</item>
+        <item quantity="other">%d computers could not be removed</item>
+    </plurals>
+    <string name="some_terminals_deleted">Some computers could not be removed</string>
+    
+    <string name="terminal_added_successfully">Successfully added trusted computer</string>
+    <string name="failure_adding_terminal">Failed adding trusted computer</string>
+    <string name="failure_deleting_terminal">Failed deleting trusted computer</string>
+                            
+    <!-- Delete terminal dialog -->
+    <string name="delete_terminal_dialog__title_1">Remove computer?</string>
+    <string name="delete_terminal_dialog__title_multi">Remove computers?</string>
+    <string name="delete_terminal_dialog__message_1">Are you sure you want to remove the computer \'%s\'?</string>
+    <string name="delete_terminal_dialog__message_multi">Are you sure you want to remove these %d computers?</string>
+    <string name="delete_terminal_dialog__positive">@string/yes</string>
+    <string name="delete_terminal_dialog__negative">@string/no</string>   
+   
+    <!--  Progress dialog -->
+    <string name="add_terminal__progress">Adding new trusted computer&#8230;</string>
+    <string name="delete_terminal__progress">Removing trusted computer&#8230;</string>
+    
+</resources>

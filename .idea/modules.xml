@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-pico.iml" filepath="$PROJECT_DIR$/android-pico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-pico/android-pico-android-pico.iml" filepath="$PROJECT_DIR$/android-pico/android-pico-android-pico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/android-wizardpager/android-wizardpager.iml" filepath="$PROJECT_DIR$/libproj/android-wizardpager/android-wizardpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/capture-activity/capture-activity.iml" filepath="$PROJECT_DIR$/libproj/capture-activity/capture-activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/dropbox-android-chooser/dropbox-android-chooser.iml" filepath="$PROJECT_DIR$/libproj/dropbox-android-chooser/dropbox-android-chooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/google-play-services/google-play-services.iml" filepath="$PROJECT_DIR$/libproj/google-play-services/google-play-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/libproj.iml" filepath="$PROJECT_DIR$/libproj/libproj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/live-sdk/live-sdk.iml" filepath="$PROJECT_DIR$/libproj/live-sdk/live-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libproj/live-sdk-sample/live-sdk-sample.iml" filepath="$PROJECT_DIR$/libproj/live-sdk-sample/live-sdk-sample.iml" />
+    </modules>
+  </component>
+</project>
