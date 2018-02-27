@@ -31,11 +31,13 @@ Later versions of android-pico are now AGPL-licenced. Please visit https://githu
 More information can be found at: http://mypico.org
 
 The following members of the Pico team worked on this code and kindly agreed for it to be released as open source under a BSD licence:
- * Frank Stajano (PI), Frank.Stajano@cl.cam.ac.uk
- * Graeme Jenkinson, gcjenkinson@gmail.com
- * Max Spencer, mrmaxspender@gmail.com
- * Chris Warrington, cmwarrington@gmail.com
+ * Frank Stajano (PI)
+ * Graeme Jenkinson
+ * Max Spencer
+ * Chris Warrington
  * Quentin-Stafford-Fraser
  * Alexander Dalgleish
- * David Llewellyn-Jones, David.Llewellyn-Jones@cl.cam.ac.uk
+ * David Llewellyn-Jones
+
+You can get in contact with the current maintainer of Pico at team@cambridgeauthentication.com
 
