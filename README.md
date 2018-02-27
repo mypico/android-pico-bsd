@@ -41,3 +41,4 @@ The following members of the Pico team worked on this code and kindly agreed for
 
 You can get in contact with the current maintainer of Pico at team@cambridgeauthentication.com
 
+We thank the European Research Council (ERC) for funding the Pico research through grant StG 307224 (Pico).
